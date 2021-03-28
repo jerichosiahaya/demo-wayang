@@ -1,16 +1,16 @@
 @font-face {
     font-family: Cinzel Decorative;
-    src: url('demo/fonts/cinzel-decorative/CinzelDecorative-Bold.ttf');
+    src: url('fonts/cinzel-decorative/CinzelDecorative-Bold.ttf');
 }
 
 @font-face {
     font-family: Century Gothic;
-    src: url('demo/fonts/century-gothic/Century-Gothic.ttf');
+    src: url('fonts/century-gothic/Century-Gothic.ttf');
 }
 
 @font-face {
     font-family: Upakarti Serong;
-    src: url('demo/fonts/upakarti-serong/Upakarti-Serong.ttf');
+    src: url('fonts/upakarti-serong/Upakarti-Serong.ttf');
 }
 
 html {
