@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Cinzel Decorative;
+    src: url('demo/fonts/cinzel-decorative/CinzelDecorative-Bold.ttf');
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: url('demo/fonts/century-gothic/Century-Gothic.ttf');
+}
+
+@font-face {
+    font-family: Upakarti Serong;
+    src: url('demo/fonts/upakarti-serong/Upakarti-Serong.ttf');
+}
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -4789,6 +4804,7 @@ body {
 }
 
 .theme-dark {
+    background-image: url('https://i.pinimg.com/564x/fb/42/5a/fb425ad34fa15091918f5ab79e5bb012.jpg');
     background-color: #000;
     color: #f5f5f7;
 }
@@ -4876,7 +4892,7 @@ body {
 }
 
 [data-module-template] [data-unit-id] .unit-wrapper.theme-dark {
-    background: #161617;
+    background: #000;
 }
 
 [data-module-template] [data-unit-id] .unit-wrapper a.unit-link {
@@ -7678,8 +7694,8 @@ html.touch .main [data-module-template="behind-the-mac-takeover"] [data-unit-id=
 }
 
 .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="she-creates"] .unit-wrapper .unit-copy-wrapper .cta-links a:hover {
-    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.9);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.9);
     text-decoration: none;
 }
 
@@ -8578,6 +8594,7 @@ html.touch .main [data-module-template="behind-the-mac-takeover"] [data-unit-id=
 
 .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="hero"] .unit-wrapper .unit-canvas-container .unit-canvas-wrapper .unit-tile:hover {
     z-index: 1;
+    cursor: pointer;
 }
 
 html.no-touch .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="hero"] .unit-wrapper .unit-canvas-container .unit-canvas-wrapper .unit-tile:hover .unit-image-wrapper,
@@ -8587,6 +8604,9 @@ html.no-js .main [data-module-template="behind-the-mac-takeover"] [data-unit-id=
     /* opacity: 0.3;
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out; */
+    transform: scale(1.1);
+    transition: transform .30s;
+    cursor: pointer;
 }
 
 html.no-touch .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="hero"] .unit-wrapper .unit-canvas-container .unit-canvas-wrapper .unit-tile:hover .unit-bio,
@@ -9182,7 +9202,13 @@ html[data-text-zoom="4"] .main [data-module-template="behind-the-mac-takeover"] 
     }
 }
 
+/* UNTUK UBAH TOMBOL */
 .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="hero"] .unit-wrapper .unit-copy-wrapper .unit-canvas-copy .cta-links {
+    /* background-color: #ad712b;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px; */
     font-size: 21px;
     line-height: 1.19048;
     font-weight: 400;
@@ -9328,8 +9354,9 @@ html[data-text-zoom="4"] .main [data-module-template="behind-the-mac-takeover"] 
     text-decoration: none;
 }
 
+/* UBAH WARNA HOVER LINK */
 .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="hero"] .unit-wrapper .unit-copy-wrapper .unit-canvas-copy .cta-links a:hover {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .main [data-module-template="behind-the-mac-takeover"] [data-unit-id="hero"] .unit-wrapper .unit-copy-wrapper .unit-canvas-copy .tag,
@@ -9683,7 +9710,7 @@ html.touch.reduced-motion .main [data-module-template="behind-the-mac-takeover"]
 }
 
 .theme-dark .modal.modal-full-viewport {
-    background: black;
+    background: yellow;
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) or (-webkit-backdrop-filter: initial) {
