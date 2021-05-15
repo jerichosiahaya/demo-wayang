@@ -135,7 +135,7 @@ p{
 	height: auto;
 
 }
-#section3 {
+#section4 {
 	background-image: url("assets/demo-background.jpg");
 	background-size: cover;
   }
@@ -171,6 +171,25 @@ p{
 	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
+#wayang-video{
+	position: absolute;
+			z-index: 4;
+			right: 0;
+			bottom: 0;
+			top:0;
+			right:0;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+	 		background-color: black; /* in case the video doesn't fit the whole page*/
+	  		background-image: /* our video */;
+	  		background-position: center center;
+	  		background-size: contain;
+	   		object-fit: cover; /*cover video background */
+}
+
 /* Demos Menu
  * --------------------------------------- */
  #demosMenu{

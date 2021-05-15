@@ -10,7 +10,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="script/jquery.pagepiling.css" />
     <script type="text/javascript" src="script/jquery.pagepiling.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,7 +25,14 @@
                 the industry's standard dummy text ever since the 1500s,</p>
 
         </div>
-        <div class="section" id=" section2">
+
+
+        <div class="section" id="section2">
+            <video id="wayang-video" controls autoplay>
+                <source src="assets/asd.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="section" id=" section3">
             <img data-aos="flip-left" class="wayang-img" src="assets/wayang-1.jpg" />
             <div class="text-description">
                 <h1 data-aos="flip-left"> Wayang Golek</h1>
@@ -40,7 +47,7 @@
         </div>
 
 
-        <div class=" section" id="section3">
+        <div class=" section" id="section4">
             <div class="text-description">
                 <h1 data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
                     data-aos-easing="ease-in-out"> Demo Background Image</h1>
@@ -50,7 +57,7 @@
 
         </div>
 
-        <div class="section" id="section4">
+        <div class="section" id="section5">
             <video autoplay loop muted id="wayang-video">
                 <source src="assets/video-demo.mp4" type="video/mp4">
             </video>
@@ -73,7 +80,7 @@
             $('#pagepiling').pagepiling({
                 menu: null,
                 direction: 'horizontal',
-                sectionsColor: ['#FFFAA9', '#CDA63C', '#AD712B', '#1A1B18'],
+                sectionsColor: ['#FFFAA9', '#CDA63C', '#AD712B'],
                 anchors: ['page1', 'page2', 'page3', 'page4'],
                 slidesNavigation: true,
                 scrollingSpeed: 400,
@@ -87,7 +94,7 @@
                 keyboardScrolling: true,
                 sectionSelector: '.section',
                 animateAnchor: false,
-                slidesNavigation: true,
+
                 //events
                 onLeave: function (index, nextIndex, direction) {
                     jQuery('.section [data-aos]').removeClass("aos-animate");
@@ -95,10 +102,21 @@
                 afterLoad: function (anchorLink, index) {
                     jQuery('.section.active [data-aos]').addClass("aos-animate");
                 },
-                afterRender: function () {},
+                afterRender: function () {
+
+                },
+
+
             });
+            $("#wayang-video").bind('ended', function () {
+                location.href = "#page3";
+            });
+
         });
     </script>
+
+
+
 </body>
 
 </html>
